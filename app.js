@@ -17,12 +17,8 @@ var campgroundRoutes = require("./routes/campground"),
 	commentRoutes 	 = require("./routes/comment"),
 	indexRoutes	     = require("./routes/index")
 
-var port = process.env.PORT || 3000;
-
-var url1 = "mongodb+srv://varun:mongov4run@cluster0-5um30.mongodb.net/yelp_camp?retryWrites=true&w=majority";
-
-// var url = process.env.DATABASEURL || 'mongodb://localhost:27017/yelp_camp_v11';
-mongoose.connect(url1, { useNewUrlParser : true, useUnifiedTopology: true });
+var url = process.env.DATABASEURL || 'mongodb://localhost:27017/yelp_camp_v11';
+mongoose.connect(url, { useNewUrlParser : true, useUnifiedTopology: true });
 
 
 app.use(bodyParser.urlencoded({ extended : true}));

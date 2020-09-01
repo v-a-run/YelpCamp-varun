@@ -9,3 +9,8 @@ In this application, users can Sign Up for a new account and Log In to :
 5. Add Comments to other Campgrounds
 6. Edit their Comments
 7. Delete their Comments
+
+Technical Info :
+This application is made using MEN (MongoDB,Express,Node.js) stack.
+At back-end, various npm modules are also used which can be seen in package.json file.
+On front-end, only Bootstrap is used.
